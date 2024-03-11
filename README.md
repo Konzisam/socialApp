@@ -1,1 +1,1 @@
-### social app built in react
+### social app built using react
