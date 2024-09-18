@@ -1,1 +1,1 @@
-### Social app built using react with sam
+### Social app built using react
