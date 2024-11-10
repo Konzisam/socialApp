@@ -10,7 +10,7 @@ import styled from "@emotion/styled";
 import Comments from "../comments/Comments";
 import { useState } from "react";
 
-const Post = ({post}) => {
+const Post = ({ post }) => {
 
   const [commentOpen, setCommentOpen] = useState(false);
 
@@ -35,8 +35,8 @@ const Post = ({post}) => {
         <MoreHorizIcon/>
       </div>
       <div className="content">
-        <p>{post.desc}</p>
-        <img src={post.img} alt="" />
+        <p>{post.description}</p>
+        <img src={post.img} alt="user image" />
       </div>
       <div className="info">
         <div className="item" onClick={() => setLiked(!liked)}>
