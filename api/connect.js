@@ -1,12 +1,16 @@
+import dotenv from 'dotenv';
+dotenv.config(); 
+
 import pkg from 'pg';
 const { Client } = pkg;
 
+
 const db = new Client({
-  host: "localhost",
-  user: "samkons_social_app",
-  password: "postgres",
-  database: "social_db",
-  port: 5432, 
+  host: process.env.POSTGRES_HOST,       
+  user: process.env.POSTGRES_USER,      
+  password: process.env.POSTGRES_PASSWORD, 
+  database: process.env.POSTGRES_DB,   
+  port: process.env.POSTGRES_PORT,       
 });
 
 db.connect((err) => {
